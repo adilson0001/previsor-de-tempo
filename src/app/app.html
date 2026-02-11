@@ -1,53 +1,93 @@
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+<style>
+  .material-symbols-outlined {
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 100,
+      'GRAD' 200,
+      'opsz' 48
+  }
+</style>
 <!-- centralizador -->
 <div class="bg-[#413d3d] h-screen w-screen flex flex-col items-center justify-center">
 
   <!-- conteudo do centro da tela -->
-  
 
-    <!-- barra de pesquisa -->
-    <div class="w-100 ">
-      <div class="relative flex items-center">
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-          class="absolute w-5 h-5 left-3 inset-y-0 my-auto text-white/70 z-10">
-          <path fill-rule="evenodd"
-            d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
-            clip-rule="evenodd" />
-        </svg>
+  <!-- barra de pesquisa -->
+  <div class="w-1/2 max-w-170 min-w-120 ">
+    <div class="relative flex items-center">
 
-        <input
-          class="w-full bg-blue-500/20 backdrop-blur-md border border-white/30 rounded-4xl pl-11 pr-4 py-2.5 text-white text-sm placeholder:text-white/60 transition duration-300 ease-in-out focus:outline-none focus:border-white/50 focus:bg-blue-500/30 hover:border-white/40 shadow-xl"
-          placeholder="Buscar cidade..." />
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+        class="absolute w-5 h-5 left-3 inset-y-0 my-auto text-white/70 z-10">
+        <path fill-rule="evenodd"
+          d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+          clip-rule="evenodd" />
+      </svg>
 
+      <input
+        class="w-full bg-blue-500/20 backdrop-blur-md border border-white/30 rounded-4xl pl-11 pr-4 py-2.5 text-white text-sm placeholder:text-white/60 transition duration-300 ease-in-out focus:outline-none focus:border-white/50 focus:bg-blue-500/30 hover:border-white/40 shadow-xl"
+        placeholder="Buscar cidade..." />
+
+    </div>
+  </div>
+
+  <!-- dados da API -->
+  <div
+    class="bg-blue-500/20 backdrop-blur-md border border-white/30 rounded-2xl p-6 shadow-2xl w-1/2 h-50 mt-5 flex max-w-170 min-w-120 ">
+
+    <!-- informações principais -->
+    <div class="flex  ">
+
+      <!-- dados -->
+      <div class="mt-3">
+        <div class=""><span class="font-inter text-white text-7xl font-bold">28°C</span></div>
+        <div class=""><span class="text-white text-[19px]">São Paulo, Brasil</span></div>
+        <div class=""><span class="text-[16px] font-medium text-[#919AA9]">Sexta, 14:30</span></div>
+
+      </div>
+
+      <!-- icone -->
+
+      <div class=" flex flex-col items-center justify-center relative bottom-6">
+        <img src="icone-sol.png" alt="" class="relative left-4 -top-3 w-45 h-auto ">
+
+        <span class="text-[16px] font-normal text-[#cbced3] fixed top-28">Parcialmente Nublado</span>
       </div>
     </div>
 
-    <!-- dados da API -->
-    <div class="bg-blue-500/20 backdrop-blur-md border border-white/30 rounded-2xl p-6 shadow-2xl w-100 h-50 mt-5">
 
-      <!-- informações principais -->
-      <div class="flex ">
+    <!-- informações secundarias -->
+    <div class="text-[16px] font-normal text-[#cbced3]  border-l-[#919aa988] border-l-2 pl-5 ml-15 flex flex-col justify-center">
 
-        <!-- dados -->
-        <div class="">
-          <div class=""><span class="font-inter text-white text-7xl font-bold">28°C</span></div>
-          <div class=""><span class="text-white text-[18px]">São Paulo, Brasil</span></div>
-          <div class=""><span class="text-[14px] font-medium text-[#919AA9]">Sexta, 14:30</span></div>
-          
-        </div>
-
-        <!-- icone -->
-
-        <div class=" flex flex-col items-center justify-center relative bottom-6">
-          <img src="icone-sol.png" alt="" class="relative left-4">
-
-          <span class="text-[14px] font-normal text-[#cbced3]">Parcialmente Nublado</span>
-        </div>
+      <div class="flex items-center mb-4">
+        <span class="material-symbols-outlined ">
+          device_thermostat
+        </span>
+        <p><span class="ml-1">Sensação </span> <span>31°C</span> <br></p>
       </div>
 
-      <!-- informações secundarias -->
-      <div class=""></div>
+      <div class="flex items-center mb-4">
+        <span class="material-symbols-outlined">
+          mobiledata_arrows
+        </span>
+        <p><span class="ml-1">Max </span><span>31° </span><span>/ Min </span><span>19°</span></p> <br>
+      </div>
+
+      <div class="flex items-center">
+        <span class="material-symbols-outlined">
+          rainy
+        </span>
+        <p><span class="ml-1">Chuva </span><span>80%</span></p>
+      </div>
+
+
     </div>
-  
+
+  </div>
+
 </div>
 <router-outlet />
